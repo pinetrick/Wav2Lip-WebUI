@@ -1,7 +1,7 @@
 from flask import Flask, request, send_file, jsonify
 import os
 from werkzeug.utils import secure_filename
-from wav2lip_inference import inference  # 封装你源码里的推理函数
+from inference import inference  # 封装你源码里的推理函数
 import uuid
 
 app = Flask(__name__)
